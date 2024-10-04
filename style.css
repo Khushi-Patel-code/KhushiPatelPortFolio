@@ -1,0 +1,235 @@
+body{
+    margin: 0px;
+}
+
+#profile{
+    position: relative;
+    height: 85vh;
+    background: url("./assests/Images/best.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+
+}
+
+.container-content{
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+
+}
+
+#navbar > .grid-container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+    background-color: #001427;
+    padding: 10px;
+    margin: 0px;
+    background-color: transparent;
+
+}
+
+.nav-item{
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: rgba(5, 5, 5, 0.486); /*  for Semi-transparent */
+    z-index: 3;
+    padding: 7px;
+}
+
+.button{
+    font-family: "Roboto Slab", serif;
+    font-size: 23px;
+    padding: 15px 25px;  
+    margin-top: 20px;
+    background: linear-gradient(135deg,  #e95009 , #ff7c11); 
+    color: rgb(0, 0, 0); 
+    font-weight: bold;
+    border: none; 
+    border-radius: 8px; 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    background: linear-gradient(135deg,  #ff7c11,  #e95009 ); 
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.361); 
+    transform: translateY(-3px);
+}
+
+.button:active {   /*Only works when clicked*/
+    transform: translateY(1px);  /*Pushing down slightly when clicked*/
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);  
+}
+
+.nav-link{
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav-link:hover {
+    color: #e95009; 
+    transform: scale(1.1);
+
+}
+
+.nav-link:active{
+    transform: translateY(1px); 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.grid-item2{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: whitesmoke ;
+
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;  /*changes the text-styling to none rather than underlined for a link */
+}
+
+a:hover{
+        text-shadow: 2px 2px 5px black;
+}
+
+@media (max-width: 550px) {
+    #navbar > .grid-container2{
+        display: inline-grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .grid-item2{
+        padding: 10px;
+    }
+}
+
+.secondary{
+    font-size: 30px;
+    font-family: "Roboto Slab", serif;
+}
+
+.lead{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+
+span{
+    color: #F86624;
+}
+
+.container h1{
+    font-family: "Roboto Slab", serif;
+    color: #007EA7;
+}
+
+h2{
+    font-family: "Roboto Slab", serif;
+}
+
+#footer{
+    background-color: #F86624;
+}
+#footer > .container{
+    display: grid;
+    width: 40%;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+svg{
+    color: whitesmoke;
+}
+
+.card {
+    border: none; 
+    transition: transform 0.3s; /* Smooth hover effect */
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up the card on hover here its scale (sx) so just in x direction scalling vector */
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0; /*making the top corners as rounded corners not the bottom two*/
+}
+
+.mybutton{
+    margin-right: 10px;
+}
+
+.mybutton:hover {
+    background-color:#F86624;
+    color: rgb(255, 255, 255);
+}
+
+.mymargin{
+    margin-top: 20px;
+}
+
+.btn-success{
+    background-color:#63C132;
+    color: black;
+}
+
+.btn-info{
+    background-color:blueviolet;
+    color: whitesmoke;
+}
+.blue{
+    background-color:rgb(83, 140, 245);
+    color: black;
+}
+
+.btn-warning{
+    background-color: #FFA62B;
+}
+
+.python{
+    background-color: #e2248c;
+    color:whitesmoke;
+}
+
+
+
+#footer .copyright{
+    margin-right: 10px;
+    padding: 15px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+}
+
+
+#footer p{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+

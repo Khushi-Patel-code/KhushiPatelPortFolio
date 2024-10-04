@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('./assests/Images/otubg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    max-width: 800px; 
+    width: 90%; 
+    margin: 40px auto; 
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+}
+
+.container p{
+    font-size: larger;
+    color: #000;
+    font-weight: 450;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #db490016;
+    transition: border-color 0.3s;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-family: "Satisfy", cursive;
+    color: #F86624;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+label {
+    margin-top: 10px;
+    display: block;
+    font-weight: 700;
+    text-align: left;
+    font-size: 18px;
+}
+
+button {
+    width: 100%; 
+    padding: 10px; 
+    background-color: #F86624; 
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em; 
+    font-weight: bolder;
+    transition: background-color 0.5s ease, color 0.2s ease;
+    margin-top: 10px; 
+}
+
+button:hover {
+    background-color: #c33e00; 
+    color: whitesmoke;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+
+#navbar {
+    margin-bottom: 0px;
+    z-index: 3; 
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.511);
+    border: none; 
+    font-family: "Roboto Slab", serif;
+    
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    color: #ffffff; 
+    font-family: "Roboto Slab", serif;
+}
+
+#navbar a:hover {
+    color: #e95009; 
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
